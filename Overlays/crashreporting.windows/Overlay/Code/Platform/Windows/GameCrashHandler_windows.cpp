@@ -9,6 +9,18 @@
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 *
 */
-#pragma once
 
-#include <platform.h> // Many CryCommon files require that this is included first.
+// LY Game Crashpad Hook - win
+
+#include <CrashReporting/GameCrashHandler.h>
+
+namespace CrashHandler
+{
+    const char* gameCrashHandlerPath = "GameCrash.Uploader.exe";
+
+    const char* GameCrashHandler::GetCrashHandlerExecutableName() const
+    {
+        return gameCrashHandlerPath;
+    }
+
+}
