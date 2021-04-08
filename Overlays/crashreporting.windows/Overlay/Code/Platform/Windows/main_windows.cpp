@@ -12,11 +12,11 @@
 
 // LY Game Gem crash uploader extension - Windows
 
+#include <AzCore/PlatformIncl.h>
+
 #include <handler/handler_main.h>
 #include <tools/tool_support.h>
 #include <Uploader/CrashUploader.h>
-
-#include <AzCore/PlatformIncl.h>
 
 namespace
 {
@@ -31,7 +31,7 @@ namespace
     }
 
 }
-int APIENTRY wWinMain(HINSTANCE, HINSTANCE, wchar_t* lpCmdLine, int)
+int APIENTRY wWinMain(HINSTANCE, HINSTANCE, [[maybe_unused]] wchar_t* lpCmdLine, int)
 {
     return crashpad::ToolSupport::Wmain(__argc, __wargv, HandlerMain);
 }

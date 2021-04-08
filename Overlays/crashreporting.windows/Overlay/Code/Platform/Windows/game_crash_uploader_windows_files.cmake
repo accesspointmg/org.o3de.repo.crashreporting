@@ -10,5 +10,6 @@
 #
 
 set(FILES
-    GameCrashHandler_windows.cpp
+    GameCrashUploader_windows.cpp
+    main_windows.cpp
 )

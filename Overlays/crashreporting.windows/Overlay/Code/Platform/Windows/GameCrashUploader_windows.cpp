@@ -10,11 +10,12 @@
 *
 */
 
+#include <AzCore/PlatformIncl.h>
+
 #include <CrashReporting/GameCrashUploader.h>
 #include <CrashSupport.h>
 
 #include <stdlib.h>
-#include <AzCore/PlatformIncl.h>
 #include <locale>
 #include <codecvt>
 

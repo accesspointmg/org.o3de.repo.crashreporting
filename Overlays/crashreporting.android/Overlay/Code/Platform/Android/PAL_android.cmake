@@ -9,6 +9,4 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #
 
-set(FILES
-    GameCrashHandler_windows.cpp
-)
+set(PAL_TRAIT_BUILD_CRASH_HANDLER_SUPPORTED FALSE)
