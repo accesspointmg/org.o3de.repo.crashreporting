@@ -6,7 +6,4 @@
 #
 #
 
-o3de_gem_setup()
-
-add_subdirectory(Code)
-
+set(PAL_TRAIT_BUILD_CRASH_HANDLER_SUPPORTED FALSE)
